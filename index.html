@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Guessing Game</title>
+</head>
+<body>
+    <header>
+        <h1>The Guessing Game</h1>
+    </header>
+    <main>
+        <section id="game-logic">
+            <h2>Game Logic</h2>
+            <p>Here is how the game operates:</p>
+            <ol>
+                <li>A winning number between 1-100 will be randomly generated.</li>
+                <li>Object of the game is to guess the randomly generated number correctly.</li>
+                <li>Input your guess into the textbox below and press submit to submit your answer.</li>
+                <li>If you guess the winning number, you win! Otherwise, you can try again.</li>
+                <li>If you cannot guess within 5 tries, the game is over and you lose.</li>
+                <li>You may restart the game by pressing "Reset."</li>
+            </ol>
+        </section>
+        <section>
+            <label for="guess">My guess is:</label>
+            <input id="guess" type="text">
+            <button type="button" onclick="numberMatch()">Submit</button>
+            <button type="button" onclick="reset()">Reset</button>
+        </section>
+        <section id="output-box">
+            <div id="output"></div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

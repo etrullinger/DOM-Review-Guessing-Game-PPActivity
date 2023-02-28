@@ -1,4 +1,4 @@
-let randomNumber = Math.floor(Math.random() * (100 - 1)) + 1;
+let randomNumber = Math.floor(Math.random() * 100) + 1;
 let output = document.querySelector("#output");
 let counter = 0;
 
@@ -19,11 +19,10 @@ function numberMatch() {
     } else {
         output.textContent = "Sorry you ran out of guesses. Better luck next time!";
     }
-    
 }
 
 function reset() {
-    randomNumber = Math.floor(Math.random() * (100 - 1)) + 1;
+    randomNumber = Math.floor(Math.random() * 100) + 1;
     output.textContent = "A new random number has been generated."
     counter = 0;
 }
